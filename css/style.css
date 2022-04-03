@@ -1,0 +1,12 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('2.jpg');
+    background-size: cover;
+    
+    
+
+}
+#topvalue{
+    top:100px;
+}

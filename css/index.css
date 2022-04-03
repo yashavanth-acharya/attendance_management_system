@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    background-image: url("1.jpeg");
+    
+  }
+  .container
+  {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+height: 100vh;
+width: 50%;
+
+
+  }
+  h1{
+      top:100px;
+     font-size: 400px; 
+   font-family: 'Nunito', sans-serif;
+    position: absolute;
+    box-sizing: border-box;
+    -webkit-text-fill-color: transparent;
+    background-size: cover;
+     background-image: url('1.jpeg');
+     background-position: center;
+     text-align: center;
+     -webkit-background-clip: text; 
+  }
+  .link{
+    position: absolute;
+    top:550px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 5%;
+    width:100px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    right: 100%;
+    color:#000;
+
+  }
+  .link::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transform: scaleY(0);
+    transform-origin: bottom ;
+    /* clip: rect(10px  350px  170px  0); */
+    background:#000;
+    z-index: -1;  
+   
+
+  }
+  .link2{
+    position: absolute;
+    top:550px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 5%;
+    width:130px;
+    height: 50px;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    color:#000;
+    left: 100%;
+
+  }
+  .link2::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transform: scaleY(0);
+    transform-origin: top ;
+    /* clip: rect(10px  350px  170px  0); */
+    background:#000;
+    z-index: -1;  
+   
+
+  }
+  a:hover{
+    text-decoration: none;
+color:#fff;
+  }
+  a:hover::before{
+    transform: scaleY(1);
+    transition: 0.8s;
+    transform-origin:  top;
+    
+  }
+  .box{
+    
+    position: absolute;
+    /* left: -50%; */
+    height: 100%;
+    width: 100%;
+  }
+  .container::before{
+    position: absolute;
+    clip-path: polygon(0% 0%, 100% 0, 100% 50%, 50% 74%, 0 51%);
+    /* background-color:rgba(255,255,255,0.6); */
+    background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+    content: "";
+    height: 100%;
+    width: 200%;
+  
+  }
+ 
